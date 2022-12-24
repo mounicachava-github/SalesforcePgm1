@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Account Manager">
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="around-small">
+                <lightning-card title="Create A New Account">
+                    <lightning-input name="Account Name" label="Name" onchange={firstname} ></lightning-input>
+                    <lightning-input name="Last Name" label="Last Name" onchange={lastname}></lightning-input>
+                    <lightning-input name="Contact Number" label="Phone Number" type="Phone" onchange={phonenumber}></lightning-input>
+                    <lightning-input name="Address" label="Address" onchange={address}></lightning-input>
+
+                    <lightning-button label="Create Account" onclick={createAccount} variant="brand" ></lightning-button>
+                </lightning-card>
+            </lightning-layout-item>
+            <lightning-layout-item size="6" padding="around-small">
+                <lightning-card title="Showing student data">
+                    <p><lightning-formatted-text value="retrivestdfirstname"></lightning-formatted-text></p>
+                    <p><lightning-formatted-text value="retrivstdlastname"></lightning-formatted-text></p>
+                    <p><lightning-formatted-phone value="retrivstdphone"></lightning-formatted-phone></p>
+                    <lightning-formatted-text value="retrivstdaddress"></lightning-formatted-text>
+                </lightning-card>
+
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+
+</template>

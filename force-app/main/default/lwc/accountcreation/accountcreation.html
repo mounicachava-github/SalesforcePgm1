@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Student Registration Page">
+        <lightning-layout>
+            <lightning-layout-item>
+                
+                <lightning-card title="Rigistration page">
+                    <lightning-input name="Account Name" label="StudentName" onchange={stdName}></lightning-input>
+                    <lightning-input name="Account Phone" label="Phone" type="phone" onchange={phone}></lightning-input>
+
+                    
+                                     </lightning-card>
+                
+            </lightning-layout-item>        
+        </lightning-layout>
+        <lightning-button label="Create student Account" onclick={createAccount}  variant="brand"></lightning-button>
+        </lightning-card>
+   </template>

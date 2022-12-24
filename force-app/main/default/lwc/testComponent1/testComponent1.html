@@ -1,0 +1,25 @@
+<template>
+        <div>
+        <div class="greeting-class">Name:{Name}</div>
+        <div>Discription:{Discription}</div>
+        <div style="color:brown; background:blue">Address: {Adress}</div>
+        <div>contact number: {number}</div> 
+        <p>Mounica Chava</p>
+        <h1 class="goat">ABCDEFGHI</h1>
+        <textarea>Last Name</textarea>
+       <div><img src={picture}/></div>
+       <lightning-input label="Greetingm" onchange={greetingchangehandler}></lightning-input>
+    </div> 
+    <template if:true={display}>
+        <div>I am here!</div>
+    </template>
+    <template for:each={citylist} for:item="city">
+        <p key={city}>Cities List:{city}</p>
+    </template>
+    <template iterator:it={citylist}> 
+        <p key={it.city}>{it.value}</p>
+
+    </template>
+
+</template>
+  
